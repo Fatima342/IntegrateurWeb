@@ -21,7 +21,7 @@ header{
 #banniere{
 	background-image: url("LOGO-CNAM-RA.gif");
 	height: 150px;
-	width: 55%;
+	width: 650px;
 	margin: auto;
 }
 
@@ -79,7 +79,7 @@ table{
 	border: ridge 1.5px;
 	margin-left:auto;
 	margin-right:auto;
-	
+	position: center;
 }
 
 
@@ -121,12 +121,12 @@ td{/*cellule du tableau*/
 	border: ridge 1.2px #FD6C9E;
 }
 
-
+/*
  #fondgris{
 	 background: grey;
  }
 
-thead, /*en tete du tableau*/
+thead, en tete du tableau
 
 tfoot{
     background-color: #800080;
@@ -134,7 +134,7 @@ tfoot{
     border: 2px;
     height: 50px;
     font-size: 50px;
-}
+}*/
 }
 nav {
 	padding: 0; margin: 0;/* espace entre la marge du haut et le menu*/
