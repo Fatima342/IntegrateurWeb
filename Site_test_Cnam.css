@@ -7,14 +7,16 @@ body{
 	margin-left: auto; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
 	margin-right: auto; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
 	width: 80%; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
+	background-image: linear-gradient(#eee, #1c87c9 );/* radient linéaire commence en haut en gris, en transition à bleu*/
 }				
-}
+
 
 header{
-	width: 100%;
+	width: 80%;
 	vertical-align: center;
 	border:10px solid #CCC;
 	border-radius: 10px;
+	margin: auto;
 }
 
 @media screen{
@@ -23,6 +25,65 @@ header{
 	height: 150px;
 	width: 650px;
 	margin: auto;
+}
+
+.page{
+	width: 65%;
+	float: flex;
+	padding-right: 70px;
+	display: inline;
+}
+
+.contenuPrincipal{
+	width: 65%;
+	float: left;
+	padding-right: 70px;
+	display: inline;
+}
+ 
+.contenuDroit {
+	display: flex;
+	float: right;
+	/*border:10px solid #CCC;
+	border-radius: 2px;*/
+	border: dotted #FD6C9E;
+    border-width: 0.3em 0 9px;
+	width: 25%;
+	height: 350px;
+	/*background-image: url(Clic.png);
+	background-repeat: no-repeat;*/
+}
+
+#liensUtiles {
+	padding-left: 10px;
+	font-size: 25px;
+	color: #FD6C9E;
+}	
+
+.lien {
+	
+	font-size: 18px;
+	color: #0000cc;
+	
+}	
+
+.image-clignote{
+	animation-duration: 3s;
+	animation-name: clignoter;
+	animation-iteration-count: infinite;
+	transition: none;
+}
+
+@keyframes clignoter {
+  0%   { opacity:1; }
+  40%   {opacity:0; }
+  100% { opacity:1; }
+}
+
+@media screen{
+.clign{
+	width: 15px;
+	height: 7px;
 }
 
 }
@@ -44,7 +105,6 @@ h1{
 h2{
     color: #0000FF;
     font-size: 28px;
-
 }
 
 p{
@@ -88,6 +148,7 @@ caption{
 	color: #FD6C9E;
 	text-decoration: underline;
 	padding-bottom: 10px;
+	
 }
 
 th{
@@ -164,24 +225,9 @@ nav  a:hover:first-child{
 	background: #FD6C9E; 
 }
 
-#header {
-  height:300px;
-  background-image:url(image_sport.jpg);
-  border:30px solid #CCC;
-  width:100%;
-  /*margin:0px auto;
-  position: relative;*/
-}
-/*
-#header h1{
-  color:black;
-  text-align: center
-}
-*/
- 
 footer {
 	background: black;	
-	width:97%;
+	width:100%;
 	justify-content: center; /* Centrer horizontalement */
 	display: flex;
 	padding: 30px;
@@ -196,5 +242,5 @@ footer {
 	color: white;
 }
  
-
+}
  
