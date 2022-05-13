@@ -22,37 +22,49 @@
 		<nav>
 			<div id="menu">
 			<ul>
-				<li><a href="Accueil_Cnam.html">Accueil</a></li>
+				<li><a href="Index_Form_Cnam.html">Accueil</a></li>
+				<li><a href="Entrainements.html">Entraînements</a></li>
 			</ul>
 			</div>
 		</nav>
             </br></br><!--balises de ligne orpheline-->  
-
+<div id="global">
 		
-		<div class="page">Vous êtes ici : <a href="Accueil.html">Accueil</a>
+		<div class="page">Vous êtes ici : <a href="Index_Form_Cnam.html">Accueil</a>
+		
 		</div></br>
-		<div  class="contenuDroit">
-			<ul id="liensUtiles"> Liens utiles :
+		
+		<!--Sidebar-->
+		<div  class="sideBar">
+			<h5 class="liensUtiles">Liens utiles</h5>
+			<li><a id="lien" href="https://github.com/" target="_blanck">GitHub</a></li></br>
+			<li><a id="lien" href="https://www.codeur.com/tuto/creation-de-site-internet/heberger-site-sur-github/" target="_blanck">
+						Héberger son site web gratuitement sur GitHub</a></li>
+			<img class="image-clignote" src="Clic2.png" alt="Cliquer">
+		</div>
+		
+		
+		
+		<!--	<ul id="liensUtiles"> Liens utiles :
 				<li><a class="lien" href="https://github.com/" target="_blanck">GitHub</a></li>
 				<li><a class="lien" href="https://www.codeur.com/tuto/creation-de-site-internet/heberger-site-sur-github/" target="_blanck">
 						Comment héberger son site web gratuitement sur GitHub</a></li></br>
+					
+				<img class="image-clignote" src="Clic2.png" alt="Clicker">
 				
-			</ul>
-			<div>
-			<p class="clign">	
-				<img class="image-clignote" src="Clic.png" alt="Clicker">
-				
-			</p>
-			</div>
-		</div>
-		<div class="contenuPrincipal">
+			</ul>-->
+			
+			
 		
+		
+		<!--Contenu de la page-->
+		<div class="contenuPrincipal">
 		<h1>1. Module développement Web - HTML/CSS </h1> 
 		<h2>1.1 Les deux langages incontournables dans la création d'un site internet</h2>
 			
 		<ul><em><strong>Découverte et apprentissage des deux langages</strong></em>
 			<li><u>Le Html</u> :</li>
-				<p> Le HTML ou Hypertext Markup Language n’est pas un langage web de programmation. 
+				<p> <span class="surligneJaune">Le HTML ou Hypertext Markup Language </span>n’est pas un langage web de programmation. 
 					Il s’agit plutôt d’un langage de balisage du contenu d’une page sur un site internet. 
 					Les balises spécifiques utilisées dans le langage HTML permettent d’inclure certains fichiers 
 					tels que les feuilles de style, les images ou les fichiers JavaScript. 
@@ -62,16 +74,17 @@
 				<p> À l’instar du langage HTML, le CSS ou feuille de style en cascade facilite la mise en forme de votre page web. 
 					Ce langage front-end permet en effet de sélectionner un élément sur la page du site et d’y appliquer une certaine mise en forme.
 					Vous pouvez par exemple avoir recours à ce langage pour définir la couleur et la taille de la police d’écriture 
-					ou encore de l’arrière-plan de votre site. Le CSS ou Cascading Style Sheets vous permet également de dimensionner 
+					ou encore de l’arrière-plan de votre site. <span class="surligneJaune">Le CSS ou Cascading Style Sheets </span>vous permet également de dimensionner 
 					un bloc de votre page web. En d’autres termes, le CSS définit l’apparence de votre site web.
 		</ul>
+		
 		</br>
         <h2>1.2 Tableau</h2>
 		
 		<table> <!-- on créé un tableau -->
 			<caption>Groupe stagiaire formation Intégrateur Web</caption>
 			</br></br>
-				<tr> <!-- On ajoute une ligne horizontale -->
+			<tr> <!-- On ajoute une ligne horizontale -->
 					<th>Nom</th> <!-- on ajoute un en-tête -->
 					<th>Prénom</th>
 					<th>Age</th>
@@ -221,21 +234,21 @@
 					<td>hugo.trarieux.auditeur@lecnam.net</td>
 					<td>---</td>
 				</tr>
+		
 		</table>
 		
+			
+		<!--<div>0000000<div>111111</div>222222</div>-->
+		
 		</div>	
-	
-		
-		
         </br></br></br></br>  
-		<section>
+		
 				<footer>
                     <div id="p1">
 					Auteur : Fatima LOUKILI || Formation Intégrateur Web || Copiright : 2022
                     </div>
 				</footer>
-		</section>
-    
+		</div>
 	</body>
 
 </html>
