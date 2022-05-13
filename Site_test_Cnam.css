@@ -1,18 +1,19 @@
-@media screen {
-body{
-	font-size: 100%
-    font-family: Source code pro, arial narrow, Sans cherif;/*police de caractere*/
 
+body{
+	font-size: 100%;
+    font-family: Source code pro, arial narrow, Sans cherif;/*police de caractere*/
+	
     background-color: #EDEDED;/*couleur de fond de page*/
-	margin-left: auto; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
-	margin-right: auto; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
+	margin-left: auto;  /*pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
+	margin-right: auto;  /*pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
 	width: 80%; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
 	background-image: linear-gradient(#eee, #1c87c9 );/* radient linéaire commence en haut en gris, en transition à bleu*/
+	
 }				
 
 
 header{
-	width: 80%;
+	width:60%;
 	vertical-align: center;
 	border:10px solid #CCC;
 	border-radius: 10px;
@@ -23,55 +24,81 @@ header{
 #banniere{
 	background-image: url("LOGO-CNAM-RA.gif");
 	height: 150px;
-	width: 650px;
+	width: 80%;
 	margin: auto;
 }
 
+#global{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin: 0;
+}
+
 .page{
-	width: 65%;
-	float: flex;
-	padding-right: 70px;
-	display: inline;
+	float: left;
+	padding-right:0 70 0 3px;
+	display: block;
+	width: 100%;
 }
 
 .contenuPrincipal{
-	width: 65%;
+	width: 75%;
 	float: left;
-	padding-right: 70px;
-	display: inline;
+	padding-right: 30px;
+	display: block;
+	
 }
- 
-.contenuDroit {
-	display: flex;
+
+@media screen{ 
+.sideBar {
+	display: block;
 	float: right;
 	/*border:10px solid #CCC;
 	border-radius: 2px;*/
 	border: dotted #FD6C9E;
     border-width: 0.3em 0 9px;
-	width: 25%;
+	width: 20%;
 	height: 350px;
+	padding-left: 10px;
+	padding-right: 0px;
 	/*background-image: url(Clic.png);
 	background-repeat: no-repeat;*/
 }
+}
 
-#liensUtiles {
-	padding-left: 10px;
+.liensUtiles {
+	
 	font-size: 25px;
 	color: #FD6C9E;
+	text-align: center;
+	border: solid 2px #FD6C9E;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
 }	
 
-.lien {
-	
-	font-size: 18px;
+#lien{
+	font-size: 1em;
 	color: #0000cc;
-	
-}	
+	 
+	text-align: left;
+}
+
+a:hover{ 
+	background: #FD6C9E;
+}
 
 .image-clignote{
 	animation-duration: 3s;
 	animation-name: clignoter;
 	animation-iteration-count: infinite;
 	transition: none;
+	width: 30%;
+	margin-top: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @keyframes clignoter {
@@ -103,7 +130,7 @@ h1{
 }
 */
 h2{
-    color: #0000FF;
+    color: c;
     font-size: 28px;
 }
 
@@ -133,24 +160,25 @@ a{
     font-size: 22px;          
 }
 
-@media screen {
+@media screen{
 table{
+	width: 100%;
 	border-collapse: collapse;/*pour fusionner les bordures de tour de tableau et de cellules- */
 	border: ridge 1.5px;
 	margin-left:auto;
 	margin-right:auto;
-	position: center;
+	margin-bottom: 10px;
 }
-
-
+}
+@media screen{
 caption{
 	font-size: 30px;
-	color: #FD6C9E;
+	color: white; /*#FD6C9E*/
 	text-decoration: underline;
 	padding-bottom: 10px;
 	
 }
-
+}
 th{
 	/*border: 2px solid red;*/
 	background-color: #9E9E9E;
@@ -174,14 +202,16 @@ tr{
 
 td{/*cellule du tableau*/
    /* border: 2px solid red;largeur de la bordure, sorte de trait, couleur du trait*/
-    background-color: white;/*couleur de fond de la premiere ligne du tableau*/
-     font-size: 20px;
+    background-color: white;/*couleur de fond lignes du tableau*/
+    font-size: 20px;
 	vertical-align: middle;
 	text-align: left;
 	/*border: 2px solid red;*/
 	border: ridge 1.2px #FD6C9E;
+	float: flex;
+	
 }
-
+}
 /*
  #fondgris{
 	 background: grey;
@@ -196,7 +226,7 @@ tfoot{
     height: 50px;
     font-size: 50px;
 }*/
-}
+
 nav {
 	padding: 0; margin: 0;/* espace entre la marge du haut et le menu*/
 	text-align: center; /* centre le texte */
@@ -211,14 +241,15 @@ nav a {
 	display: inline-block;
 	margin: 0 40 3 40px;
 	background: Black; /* couleur de fond */
-	width: 120px;
+	width: 150px;
 	text-decoration: none; /* pas d'héritage avec effet souligné */
 	color: yellow; /* couleur du texte */
-	height: 30px; /* hauteur */
+	height: 40px; /* hauteur */
 	line-height: 3 50 3 50px; /* interligne */
 	padding: 0 50px; /* marges intérieur */
 	font-family: sans-serif; /* police d'écriture */
 	font-size: 28px; /* taille du texte */
+	border-radius: 10px;
 }
 
 nav  a:hover:first-child{ 
@@ -230,11 +261,9 @@ footer {
 	width:100%;
 	justify-content: center; /* Centrer horizontalement */
 	display: flex;
-	padding: 30px;
-	margin-left: auto; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
-	margin-right: auto; /* pour centrer notre body ou autre bloc - marge "auto" et indiquer un width*/
-	/*margin:0px auto;
-	position: relative;*/
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
 }
  
 #p1 {
@@ -242,5 +271,23 @@ footer {
 	color: white;
 }
  
+.surligneJaune{
+	background: yellow;
 }
  
+ 
+
+h1{
+    color: black;
+    font-size: 25px;
+}
+
+p{
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+}
+
+img{
+    width: 20%;
+}
